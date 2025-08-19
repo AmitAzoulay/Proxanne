@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Hachshara\\proxanne\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{15C03579-7BED-4E01-9E8F-6899288D5335}|proxanne\\proxanne.csproj|c:\\hachshara\\proxanne\\proxanne\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15C03579-7BED-4E01-9E8F-6899288D5335}|proxanne\\proxanne.csproj|solutionrelative:proxanne\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Hachshara\\proxanne\\proxanne\\Program.cs",
+              "RelativeDocumentMoniker": "proxanne\\Program.cs",
+              "ToolTip": "C:\\Hachshara\\proxanne\\proxanne\\Program.cs",
+              "RelativeToolTip": "proxanne\\Program.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAwwCkAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-14T08:10:04.533Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

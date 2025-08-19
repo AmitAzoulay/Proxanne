@@ -1,0 +1,14 @@
+C:\Hachshara\proxanne\proxanne\bin\Debug\net8.0\proxanne.exe
+C:\Hachshara\proxanne\proxanne\bin\Debug\net8.0\proxanne.deps.json
+C:\Hachshara\proxanne\proxanne\bin\Debug\net8.0\proxanne.runtimeconfig.json
+C:\Hachshara\proxanne\proxanne\bin\Debug\net8.0\proxanne.dll
+C:\Hachshara\proxanne\proxanne\bin\Debug\net8.0\proxanne.pdb
+C:\Hachshara\proxanne\proxanne\obj\Debug\net8.0\proxanne.GeneratedMSBuildEditorConfig.editorconfig
+C:\Hachshara\proxanne\proxanne\obj\Debug\net8.0\proxanne.AssemblyInfoInputs.cache
+C:\Hachshara\proxanne\proxanne\obj\Debug\net8.0\proxanne.AssemblyInfo.cs
+C:\Hachshara\proxanne\proxanne\obj\Debug\net8.0\proxanne.csproj.CoreCompileInputs.cache
+C:\Hachshara\proxanne\proxanne\obj\Debug\net8.0\proxanne.dll
+C:\Hachshara\proxanne\proxanne\obj\Debug\net8.0\refint\proxanne.dll
+C:\Hachshara\proxanne\proxanne\obj\Debug\net8.0\proxanne.pdb
+C:\Hachshara\proxanne\proxanne\obj\Debug\net8.0\proxanne.genruntimeconfig.cache
+C:\Hachshara\proxanne\proxanne\obj\Debug\net8.0\ref\proxanne.dll
