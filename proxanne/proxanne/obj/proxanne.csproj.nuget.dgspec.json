@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Hachshara\\proxanne\\proxanne\\proxanne.csproj": {}
+    "C:\\clones\\Proxanne\\proxanne\\proxanne\\proxanne.csproj": {}
   },
   "projects": {
-    "C:\\Hachshara\\proxanne\\proxanne\\proxanne.csproj": {
+    "C:\\clones\\Proxanne\\proxanne\\proxanne\\proxanne.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Hachshara\\proxanne\\proxanne\\proxanne.csproj",
+        "projectUniqueName": "C:\\clones\\Proxanne\\proxanne\\proxanne\\proxanne.csproj",
         "projectName": "proxanne",
-        "projectPath": "C:\\Hachshara\\proxanne\\proxanne\\proxanne.csproj",
+        "projectPath": "C:\\clones\\Proxanne\\proxanne\\proxanne\\proxanne.csproj",
         "packagesPath": "C:\\Users\\Shuly\\.nuget\\packages\\",
-        "outputPath": "C:\\Hachshara\\proxanne\\proxanne\\obj\\",
+        "outputPath": "C:\\clones\\Proxanne\\proxanne\\proxanne\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
