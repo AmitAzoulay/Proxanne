@@ -63,58 +63,53 @@ public class proxanne
 
                             remainingRequest += "\r\n";
 
-                            if(remainingRequest.Contains("GET / HTTP/1.1"))
+                            remoteDomainName = remainingRequest.Split("Host: ")[1];
+
+                            if (remoteDomainName.Contains(":"))
                             {
-                                remoteDomainName = remainingRequest.Split("Host: ")[1];
-
-                                if (remoteDomainName.Contains(":"))
-                                {
-                                    remoteDomainName = remoteDomainName.Split(":")[0];
-                                }
-
-                                writer.WriteLine("\n\nHost: " + remoteDomainName);
-
-                                if (remoteDomainName.Contains("\r") || remoteDomainName.Contains("\n"))
-                                {
-                                    remoteDomainName = remoteDomainName.Replace("\r", "").Replace("\n", "");
-                                }
-
-                                addresses = Dns.GetHostAddresses(remoteDomainName);
-
-                                if (remainingRequest.Contains("www.google.com"))
-                                {
-                                    remoteEndPoint = new IPEndPoint(IPAddress.Parse("127.0.0.1"), 8000);
-                                    writer.WriteLine("Google catched : forward to localhost:8000");
-                                }
-                                else
-                                {
-                                    remoteEndPoint = new IPEndPoint(IPAddress.Parse("127.0.0.1"), 7000);
-                                }
-
-                                if(remoteDomainName != "localhost")
-                                {
-                                    pingToServer = new Ping();
-                                    writer.WriteLine("Ping to: " + addresses[0]);
-                                    replyFromServer = pingToServer.Send(addresses[0]);
-
-                                    if (replyFromServer.Status == IPStatus.Success)
-                                    {
-                                        Console.WriteLine(remoteDomainName);
-                                        if (!(replyFromServer.Options.Ttl > 128 || replyFromServer.Options.Ttl < 64))
-                                        {
-                                            writer.WriteLine(remoteDomainName + " is a windows server");
-                                            writer.WriteLine("Proxy close the session");
-                                            return;
-                                        }
-                                        else
-                                        {
-                                            writer.WriteLine(remoteDomainName + " is a Non-windows server");
-                                        }
-                                    }
-                                }
-                                
+                                remoteDomainName = remoteDomainName.Split(":")[0];
                             }
 
+                            writer.WriteLine("\n\nHost: " + remoteDomainName);
+
+                            if (remoteDomainName.Contains("\r") || remoteDomainName.Contains("\n"))
+                            {
+                                remoteDomainName = remoteDomainName.Replace("\r", "").Replace("\n", "");
+                            }
+
+                            addresses = Dns.GetHostAddresses(remoteDomainName);
+
+                            if (remainingRequest.Contains("www.google.com"))
+                            {
+                                remoteEndPoint = new IPEndPoint(IPAddress.Parse("127.0.0.1"), 8000);
+                                writer.WriteLine("Google catched : forward to localhost:8000");
+                            }
+                            else
+                            {
+                                remoteEndPoint = new IPEndPoint(IPAddress.Parse("127.0.0.1"), 7000);
+                            }
+
+                            if(remoteDomainName != "localhost")
+                            {
+                                pingToServer = new Ping();
+                                writer.WriteLine("Ping to: " + addresses[0]);
+                                replyFromServer = pingToServer.Send(addresses[0]);
+
+                                if (replyFromServer.Status == IPStatus.Success)
+                                {
+                                    if (!(replyFromServer.Options.Ttl > 128 || replyFromServer.Options.Ttl < 64))
+                                    {
+                                        writer.WriteLine(remoteDomainName + " is a windows server");
+                                        writer.WriteLine("Proxy close the session");
+                                        return;
+                                    }
+                                    else
+                                    {
+                                        writer.WriteLine(remoteDomainName + " is a Non-windows server");
+                                    }
+                                }
+                            }
+                             
                             remoteEndPoint = new IPEndPoint(IPAddress.Parse("127.0.0.1"), 7000);
                             await remoteServer.ConnectAsync(remoteEndPoint);
                             Console.WriteLine("Proxy connected to " + remoteEndPoint);
