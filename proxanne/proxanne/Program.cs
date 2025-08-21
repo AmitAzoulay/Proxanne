@@ -110,7 +110,6 @@ public class proxanne
                                 }
                             }
                              
-                            remoteEndPoint = new IPEndPoint(IPAddress.Parse("127.0.0.1"), 7000);
                             await remoteServer.ConnectAsync(remoteEndPoint);
                             Console.WriteLine("Proxy connected to " + remoteEndPoint);
 
