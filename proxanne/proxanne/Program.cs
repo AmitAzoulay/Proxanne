@@ -52,7 +52,7 @@ public class proxanne
                         {
                             clientStream = clientSocket.GetStream();
                             reader = new StreamReader(clientStream);
-                           
+
                             requestLine = await reader.ReadLineAsync();
                             remainingRequest = requestLine + "\r\n";
 
@@ -68,14 +68,14 @@ public class proxanne
                             {
                                 remoteDomainName = remoteDomainName.Split(":")[0];
                             }
-                            
+
                             writer.WriteLine("\n\nHost: " + remoteDomainName);
-                            
+
                             if (remoteDomainName.Contains("\r") || remoteDomainName.Contains("\n"))
                             {
                                 remoteDomainName = remoteDomainName.Replace("\r", "").Replace("\n", "");
                             }
-                            
+
                             addresses = Dns.GetHostAddresses(remoteDomainName);
 
                             if (remainingRequest.Contains("www.google.com"))
@@ -105,7 +105,7 @@ public class proxanne
                                     writer.WriteLine(remoteDomainName + " is a Non-windows server");
                                 }
                             }
-                            
+
                             await remoteServer.ConnectAsync(remoteEndPoint);
                             Console.WriteLine("Proxy connected to " + remoteEndPoint);
 

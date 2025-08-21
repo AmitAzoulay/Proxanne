@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\Shuly\\Documents\\Proxanne\\proxanne\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{15C03579-7BED-4E01-9E8F-6899288D5335}|proxanne\\proxanne.csproj|c:\\users\\shuly\\documents\\proxanne\\proxanne\\proxanne\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{15C03579-7BED-4E01-9E8F-6899288D5335}|proxanne\\proxanne.csproj|solutionrelative:proxanne\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{080933D5-A218-459B-9FCE-2345D9E32466}|proxanne\\proxanne.csproj|c:\\users\\shuly\\documents\\proxanne\\proxanne\\proxanne\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{080933D5-A218-459B-9FCE-2345D9E32466}|proxanne\\proxanne.csproj|solutionrelative:proxanne\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -24,9 +24,9 @@
               "RelativeDocumentMoniker": "proxanne\\Program.cs",
               "ToolTip": "C:\\Users\\Shuly\\Documents\\Proxanne\\proxanne\\proxanne\\Program.cs",
               "RelativeToolTip": "proxanne\\Program.cs",
-              "ViewState": "AgIAAHEAAAAAAAAAAAAwwHYAAAAxAAAAAAAAAA==",
+              "ViewState": "AgIAAGoAAAAAAAAAAAAqwIkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-14T08:10:04.533Z",
+              "WhenOpened": "2025-08-21T12:27:27.686Z",
               "EditorCaption": ""
             }
           ]
