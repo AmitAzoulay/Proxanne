@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("proxanne")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0f867ec8ce6729989a33547e964243eb792185ba")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0102563deef23b7ae00c41cfb42db94665ab8af0")]
 [assembly: System.Reflection.AssemblyProductAttribute("proxanne")]
 [assembly: System.Reflection.AssemblyTitleAttribute("proxanne")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
