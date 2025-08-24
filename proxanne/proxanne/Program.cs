@@ -20,11 +20,8 @@ public class proxanne
             while (true)
             {
                 TcpClient clientSocket = await proxyListener.AcceptTcpClientAsync();
-                Console.WriteLine("Client connected...");
 
                 _ = handleClientAsync(clientSocket);
-
-
             }
         }
         public async Task handleClientAsync(TcpClient clientSocket)
@@ -65,7 +62,7 @@ public class proxanne
 
                             remoteDomainName = remainingRequest.Split("Host: ")[1];
 
-                            if (remoteDomainName.Contains(":"))
+                            if (remoteDomainName.Contains(":"))// Sometimes comes with port
                             {
                                 remoteDomainName = remoteDomainName.Split(":")[0];
                             }
@@ -111,17 +108,12 @@ public class proxanne
                             }
                              
                             await remoteServer.ConnectAsync(remoteEndPoint);
-                            Console.WriteLine("Proxy connected to " + remoteEndPoint);
-
                             remoteStream = remoteServer.GetStream();
                             remoteWriter = new StreamWriter(remoteStream);
-
                             requestBytes = System.Text.Encoding.ASCII.GetBytes(remainingRequest);
                             await remoteStream.WriteAsync(requestBytes, 0, requestBytes.Length);
-
                             clientToServer = clientStream.CopyToAsync(remoteStream);
                             serverToClient = remoteStream.CopyToAsync(clientStream);
-
                             await Task.WhenAny(clientToServer, serverToClient);
                         }
                         catch (Exception ex)
